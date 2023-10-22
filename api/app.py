@@ -26,16 +26,16 @@ def check_code():
                 return redirect("/ok.html")
 
             else:
-                return redirect("/error.html")
+                return redirect("/blad.html")
     return render_template("index.html", obraz=obraz)
 
 @app.route('/ok.html')
 def show_ok():
     return render_template("ok.html")
 
-@app.route('/error.html')
+@app.route('/blad.html')
 def show_error():
-    return render_template("ERROR.html")
+    return render_template("blad.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

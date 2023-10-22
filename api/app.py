@@ -21,7 +21,7 @@ def check_code():
         licznik = 1
         while licznik <= 5:
             licznik += 1
-            print(kod_sejfu)
+
             if kod_sejfu == wpisany_kod:
                 return redirect("/ok.html")
 

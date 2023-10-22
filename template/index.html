@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To tytuł</title>
+</head>
+<body>
+
+<h1>
+    Witaj w szkole łamania szyfrów
+</h1>
+<form method="POST" action="/">
+    <input name="imię" placeholder="Imię" type="text">
+    <select name="level">
+        <option value="level 1">level 1</option>
+        <option value="level 2">level 2</option>
+        <option value="level 3">level 3</option>
+        <option value="level 4">level 4</option>
+        <option value="level 5">level 5</option>
+        <option value="level 6">level 6</option>
+    </select>
+    <input name="kod" placeholder="podaj kod do sejfu" type="number">
+    <input type="submit" value="Wyślij">
+</form>
+<img src="{{ url_for('static', filename='/sejf.png') }}">
+
+</body>
+</html>
